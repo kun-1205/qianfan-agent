@@ -1,0 +1,32 @@
+# .gitignore —— 密钥与数据安全第一道防线
+
+# ---- 密钥 / 凭证（最重要）----
+.env
+*.key
+*secret*
+*credentials*
+qianfan_config.json
+
+# ---- 原始业务数据（严禁上传）----
+data/raw/
+data/*.pdf
+data/*.docx
+data/*.xlsx
+!data/sample_*.md
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 输出产物 ----
+eval/*_output.json
